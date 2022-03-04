@@ -47,16 +47,21 @@ public class MainActivity extends AppCompatActivity {
 
         switch (btId){
             case R.id.btAdd:
+                Log.i("Oparation","Add");
                 sum = num1 + num2;
                 break;
             case R.id.btSub:
+                Log.i("Oparation","Subtraction");
                 sum = num1 - num2;
                 break;
             case R.id.btMul:
+                Log.i("Oparation","Multiplication");
                 sum = num1 * num2;
                 break;
             case R.id.btDiv:
+                Log.i("Oparation","Division");
                 if(num2 == 0){
+                    Log.e("Error oparation","Attempt divid by zero");
                     showToast(getString(R.string.ERROR_DIVIDE_BY_ZERO));
                     txtResult.setText("");
                     return;
@@ -70,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
         }
+
         txtResult.setText(""+sum);
 
     }
