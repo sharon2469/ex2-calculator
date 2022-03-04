@@ -9,23 +9,24 @@
 
     <TextView
         android:id="@+id/textView"
-        android:textSize="18sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="50dp"
         android:text="@string/mainactivity_textview_title"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="347dp"
-        android:layout_height="618dp"
+        android:layout_width="346dp"
+        android:layout_height="581dp"
         android:layout_marginTop="1dp"
         android:layout_marginBottom="1dp"
+        android:background="@drawable/txt_background"
         android:divider="@drawable/empty_tall_divider"
         android:orientation="vertical"
         android:showDividers="middle"
@@ -42,80 +43,82 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="127dp"
+                android:layout_width="64dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_marginLeft="10dp"
+                android:layout_weight="1"
                 android:text="@string/mainactivity_textview_operand1"
+                android:textColor="#FFC107"
                 android:textSize="18sp" />
 
             <EditText
-                android:textCursorDrawable="@drawable/cursor_background"
-                android:backgroundTint="#FFC107"
+
                 android:id="@+id/edOperand1"
-                android:layout_width="176dp"
+                android:layout_width="199dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
+                android:background="@drawable/txt_background"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:minHeight="48dp"
                 android:text=""
+                android:textCursorDrawable="@drawable/cursor_background"
                 tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:divider="@drawable/empty_tall_divider"
             android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
             android:showDividers="middle">
 
             <Button
-                android:backgroundTint="#FFC107"
-
                 android:id="@+id/btAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="#FFC107"
                 android:onClick="operationButtonClicked"
                 android:text="@string/mainactivity_button_add"
                 android:textSize="20dp" />
 
             <Button
-                android:backgroundTint="#FFC107"
-
-                android:onClick="operationButtonClicked"
                 android:id="@+id/btSub"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="20dp"
-                android:text="@string/mainactivity_button_sub" />
+                android:backgroundTint="#FFC107"
+                android:onClick="operationButtonClicked"
+                android:text="@string/mainactivity_button_sub"
+                android:textSize="20dp" />
 
             <Button
-                android:backgroundTint="#FFC107"
-
-                android:onClick="operationButtonClicked"
                 android:id="@+id/btMul"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="20dp"
-                android:text="@string/mainactivity_button_mul" />
+                android:backgroundTint="#FFC107"
+                android:onClick="operationButtonClicked"
+                android:text="@string/mainactivity_button_mul"
+                android:textSize="20dp" />
 
             <Button
-                android:backgroundTint="#FFC107"
-
-                android:onClick="operationButtonClicked"
                 android:id="@+id/btDiv"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textSize="20dp"
-                android:text="@string/mainactivity_button_div" />
+                android:backgroundTint="#FFC107"
+                android:onClick="operationButtonClicked"
+                android:text="@string/mainactivity_button_div"
+                android:textSize="20dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -128,40 +131,42 @@
                 android:layout_width="127dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
                 android:layout_marginLeft="10dp"
+                android:layout_weight="1"
                 android:text="@string/mainactivity_textview_operand2"
+                android:textColor="#FFC107"
                 android:textSize="18dp" />
 
             <EditText
-                android:backgroundTint="#FFC107"
-                android:textCursorDrawable="@drawable/cursor_background"
                 android:id="@+id/edOperand2"
-                android:layout_width="176dp"
+                android:layout_width="252dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginRight="20dp"
                 android:layout_weight="1"
+                android:background="@drawable/txt_background"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:minHeight="48dp"
                 android:text=""
+                android:textCursorDrawable="@drawable/cursor_background"
                 tools:ignore="SpeakableTextPresentCheck" />
         </LinearLayout>
 
 
         <View
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
             android:id="@+id/view2"
             android:layout_width="match_parent"
             android:layout_height="4dp"
-            android:background="#FFC107"/>
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#FFC107" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="101dp"
-            android:paddingLeft="80dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingLeft="80dp">
 
             <TextView
                 android:id="@+id/textView6"
@@ -172,6 +177,8 @@
                 android:layout_weight="1"
                 android:text="@string/mainactivity_button_eq"
                 android:textAlignment="center"
+
+                android:textColor="#FFC107"
                 android:textSize="30dp" />
 
             <TextView
