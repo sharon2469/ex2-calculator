@@ -10,51 +10,50 @@ public class TableActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i("onCreate", "test");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_table);
-        Log.e("test", "onCreate");
     }
 
     @Override
     protected void onStart() {
+        Log.i("onStart", "test");
         super.onStart();
-        Log.e("test", "onStart");
     }
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
+        Log.i("onSaveInstanceState", "test");
         super.onSaveInstanceState(outState);
-        Log.e("test", "onSaveInstanceState");
     }
 
     @Override
     protected void onResume() {
+        Log.i("onResume", "test");
         super.onResume();
-        Log.e("test", "onResume");
     }
 
     @Override
     protected void onPause() {
+        Log.i("onPause", "test");
         super.onPause();
-        Log.e("test", "onPause");
     }
 
     @Override
     protected void onStop() {
+        Log.i("onStop", "test");
         super.onStop();
-        Log.e("test", "onStop");
     }
 
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        Log.i("onRestoreInstanceState", "test");
         super.onRestoreInstanceState(savedInstanceState);
-        Log.e("test", "onRestoreInstanceState");
     }
 
     @Override
     protected void onDestroy() {
+        Log.i("onDestroy", "test");
         super.onDestroy();
-        Log.e("test", "onDestroy");
-
     }
 }

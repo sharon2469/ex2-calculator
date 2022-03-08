@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layoutDirection="ltr"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <TextView
@@ -54,7 +55,7 @@
                 android:textSize="18sp" />
 
             <EditText
-
+                android:textColor="@color/white"
                 android:id="@+id/edOperand1"
                 android:layout_width="199dp"
                 android:layout_height="wrap_content"
@@ -134,6 +135,7 @@
                 android:textSize="18dp" />
 
             <EditText
+                android:textColor="@color/white"
                 android:id="@+id/edOperand2"
                 android:layout_width="252dp"
                 android:layout_height="wrap_content"
@@ -178,6 +180,7 @@
                 android:textSize="30dp" />
 
             <TextView
+                android:textColor="@color/white"
                 android:id="@+id/txtRes"
                 android:layout_width="145dp"
                 android:layout_height="wrap_content"
